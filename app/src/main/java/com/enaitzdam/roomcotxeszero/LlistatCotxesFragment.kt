@@ -25,11 +25,9 @@ class LlistatCotxesFragment : Fragment() {
             R.layout.fragment_llistat_cotxes, container, false
         )
 
-        binding.buttonTornar.setOnClickListener{
+        binding.buttonTornar.setOnClickListener {
             findNavController().navigate(R.id.action_llistatCotxesFragment_to_afegirCotxeFragment)
         }
         return binding.root
     }
-
-
 }

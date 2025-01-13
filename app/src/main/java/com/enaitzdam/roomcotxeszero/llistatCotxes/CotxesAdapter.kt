@@ -1,10 +1,11 @@
-package com.enaitzdam.roomcotxeszero
+package com.enaitzdam.roomcotxeszero.llistatCotxes
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.enaitzdam.roomcotxeszero.R
 import com.enaitzdam.roomcotxeszero.data.Cotxe
 
 class CotxesAdapter(private val mList: List<Cotxe>) : RecyclerView.Adapter<CotxesAdapter.ViewHolder>() {

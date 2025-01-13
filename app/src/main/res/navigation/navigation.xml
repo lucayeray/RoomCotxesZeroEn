@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/llistatCotxesFragment"
-        android:name="com.enaitzdam.roomcotxeszero.LlistatCotxesFragment"
+        android:name="com.enaitzdam.roomcotxeszero.llistatCotxes.LlistatCotxesFragment"
         android:label="fragment_llistat_cotxes"
         tools:layout="@layout/fragment_llistat_cotxes" >
         <action

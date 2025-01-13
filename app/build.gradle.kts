@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    //PLUGIN PER AL KSP
+    id("com.google.devtools.ksp") version "1.9.20-1.0.14"
+
 }
 
 android {
@@ -34,6 +37,7 @@ android {
         jvmTarget = "1.8"
     }
 
+
     dataBinding {
         enable = true
     }
@@ -50,6 +54,13 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.room.common)
     implementation(libs.androidx.room.ktx)
+
+    //DEPENDENCIES A MÀ PER A ROOM
+    implementation("androidx.room:room-runtime:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

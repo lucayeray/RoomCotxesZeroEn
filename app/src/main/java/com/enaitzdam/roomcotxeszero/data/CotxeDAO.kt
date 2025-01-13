@@ -12,12 +12,12 @@ interface CotxeDAO {
     //Consultes
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun afegirCotxe(cotxe: Cotxe)
+    fun afegirCotxe(cotxe: Cotxe)
 
 
     //select all
     @Query("SELECT * FROM Car ORDER BY year DESC")
-    suspend fun obtenirCotxes(): LiveData<List<Cotxe>>
+    fun obtenirCotxes(): LiveData<List<Cotxe>>
 
 
 }
